@@ -1,5 +1,5 @@
 import React from 'react';
-import prop from 'prop-types';
+import PropTypes from 'prop-types';
 import { Input } from './Filter.styled';
 
 const Filter = ({ filter, onFilterChange }) => {
@@ -13,9 +13,9 @@ const Filter = ({ filter, onFilterChange }) => {
   );
 };
 
-Filter.prop = {
-  filter: prop.string.isRequired,
-  onFilterChange: prop.func.isRequired,
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  onFilterChange: PropTypes.func.isRequired,
 };
 
 export default Filter;
